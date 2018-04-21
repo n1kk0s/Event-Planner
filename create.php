@@ -1,20 +1,13 @@
-
 <?php
   include('connect.php');
 
-  $key = $_GET['joinKey'];
+  $key = $_GET['createKey'];
 
-  if(isset($_GET['join'])){ // When the form is submitted, query the database for the entered eventKey
+  if(isset($_GET['create'])){ // When the form is submitted, gather the event ID to see if it exists
     $sql = "SELECT * FROM event WHERE eventKey='{$key}'";
     $result = mysqli_query($conn, $sql);
     if(mysqli_num_rows($result) > 0){ //If there's an eventKey, show the page with details
       echo "Result accessed";
-      $row = $result -> fetch_assoc();
-      $name = $row['name'];
-      $host = $row['host'];
-      $date = $row['date'];
-      $location = $row['location'];
-      $description = $row['description'];
 
 
       echo "<!DOCTYPE html>";

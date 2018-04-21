@@ -7,7 +7,7 @@ $pw = '';
 
 $conn = new mysqli($hn, $un, $pw, $db);
 
-echo "connection successful";
+//echo "connection successful";
 
 
 

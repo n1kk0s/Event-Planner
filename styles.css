@@ -3,7 +3,7 @@ body {
   padding: 0;
   line-height: 1.3rem;
   font-family: 'Roboto', sans-serif;
-  background-color: #2f4fff;
+  background: #2f4fff url("/images/back.png") no-repeat fixed center;
   color: #f3f3f3;
 }
 

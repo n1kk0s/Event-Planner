@@ -20,7 +20,7 @@
         <input class='button' type='submit' name='join' value='Join'>
     </form>
 
-    <form class='create' action='create.php'>
+    <form class='create' action='create.php' method='get'>
         <h2 class='subtitle'>Create an Event</h2>
         <label for='createKey'>Create the event key</label><br>
         <input class='field' type='text' name='createKey' placeholder='Create event key' required><br>
