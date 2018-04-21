@@ -1,3 +1,4 @@
+/* General styling and spacing */
 body {
   margin: 0;
   padding: 0;
@@ -12,11 +13,13 @@ body {
   width: 50rem;
 }
 
+/* Styling for text */
 .title {
   text-align: center;
   font-weight: bold;
   font-size: 3rem;
   padding-top: 3rem;
+  color: #f3f3f3;
 }
 
 .subtitle {
@@ -25,6 +28,7 @@ body {
   font-size: 2rem;
 }
 
+/* Div styling */
 .join {
   margin: 0;
   padding-top: 2rem;
@@ -45,6 +49,7 @@ body {
   box-sizing: border-box;
 }
 
+/* Form element styling */
 .field {
   display: block;
   margin: 0 auto;
@@ -57,9 +62,10 @@ body {
 
 label {
   display: block;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
+  vertical-align: top;
   box-sizing: border-box;
 }
 
@@ -69,9 +75,20 @@ label {
  text-align: center;
  margin: 0 auto;
  padding: 10px 15px;
- width: 35%;
+ width: 10rem;
  color: #2f4fff;
  background-color: ##f3f3f3;
  border: none;
  border-radius: 30px;
+}
+
+table {
+  margin: 0 auto;
+  padding: 5px;
+}
+table .field, textarea {
+  width: 100%
+}
+.col1 {
+  width: 60%;
 }

@@ -2,13 +2,18 @@
 <?php
   include('connect.php');
 
-  $key = $_GET['joinKey'];
+  if(isset($_GET['join'])) {
+    $key = $_GET['joinKey'];
+  } else {
+    $key = $_GET['createKey'];
+  }
 
-  if(isset($_GET['join'])){ // When the form is submitted, query the database for the entered eventKey
+  if(isset($_GET['join']) || isset($_GET['create'])){ // When the form is submitted, query the database for the entered eventKey
+
     $sql = "SELECT * FROM event WHERE eventKey='{$key}'";
     $result = mysqli_query($conn, $sql);
     if(mysqli_num_rows($result) > 0){ //If there's an eventKey, show the page with details
-      echo "Result accessed";
+      echo "Result found";
       $row = $result -> fetch_assoc();
       $name = $row['name'];
       $host = $row['host'];
@@ -45,16 +50,11 @@
 
     }
 
-    function eventExists($key) {
-      include('connect.php');
-      echo "Checking key";
-      $sql = "SELECT * FROM event WHERE eventKey='{$key}'";
-      $result = mysqli_query($conn, $sql);
-
-      if($result) {
-        header("Location:eventPage.php");
+    function getKey() {
+      if(isset($_GET['join'])) {
+        return $_GET['joinKey'];
       } else {
-        return false;
+        return $_GET['createKey'];
       }
     }
   }
