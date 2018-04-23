@@ -13,7 +13,6 @@
     $sql = "SELECT * FROM event WHERE eventKey='{$key}'";
     $result = mysqli_query($conn, $sql);
     if(mysqli_num_rows($result) > 0){ //If there's an eventKey, show the page with details
-      echo "Result found";
       $row = $result -> fetch_assoc();
       $name = $row['name'];
       $host = $row['host'];
