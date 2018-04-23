@@ -1,9 +1,9 @@
 <?php
   include('connect.php');
 
-  $key = $_GET['createKey'];
+  $key = $_POST['createKey'];
 
-  if(isset($_GET['create'])){ // When the form is submitted, gather the event ID to see if it exists
+  if(isset($_POST['create'])){ // When the form is submitted, gather the event ID to see if it exists
     $sql = "SELECT * FROM event WHERE eventKey='{$key}'";
     $result = mysqli_query($conn, $sql);
     if(mysqli_num_rows($result) > 0){ //If there's an eventKey, let the user know they can't use the key
@@ -34,7 +34,7 @@
       echo "<body>";
         echo "<h1 class='title'>Create Your Event</h1>";
         echo "<div class='createForm'>";
-          echo "<form class='createForm' action='verify.php'>";
+          echo "<form class='createForm' action='verify.php' method='post'>";
             echo "<label for='eventKey'>Event Key:</label>";
                 echo "<input class='field' type='text' name='eventKey' value='{$key}' readonly>";
               echo "<label for='name'>Event Name:</label>";
@@ -49,7 +49,7 @@
                 echo "<textarea class='field' rows='6' cols='50' name='description' placeholder='Enter a description for your event.'></textarea>";
             echo "<input class='button' type='submit' name='create' value='Create'>";
           echo "</form>";
-          echo "<form action='index.php'><input class='button' type='submit' name='cancel' value='Cancel'></form>";
+          echo "<form action='index.php' method='post'><input class='button' type='submit' name='cancel' value='Cancel'></form>";
           echo "</div>";
 
       echo "</body>";

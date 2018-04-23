@@ -2,13 +2,13 @@
 <?php
   include('connect.php');
 
-  if(isset($_GET['join'])) {
-    $key = $_GET['joinKey'];
+  if(isset($_POST['join'])) {
+    $key = $_POST['joinKey'];
   } else {
-    $key = $_GET['createKey'];
+    $key = $_POST['createKey'];
   }
 
-  if(isset($_GET['join']) || isset($_GET['create'])){ // When the form is submitted, query the database for the entered eventKey
+  if(isset($_POST['join']) || isset($_POST['create'])){ // When the form is submitted, query the database for the entered eventKey
 
     $sql = "SELECT * FROM event WHERE eventKey='{$key}'";
     $result = mysqli_query($conn, $sql);
@@ -30,6 +30,10 @@
       echo "<body>";
         echo "<h1 class='title'>$name</h1>";
         echo "<h2 class='subtitle'>Hosted by: $host</h2>";
+        echo "<h2 class='info'>$date</h2>";
+        echo "<h2 class='info'>$location</h2>";
+        echo "<p class='description'>$description</p>";
+        echo "<form action='index.php' method='post'><input class='button' type='submit' value='Home'></form>";
       echo "</body>";
       echo "</html>";
 
@@ -50,10 +54,10 @@
     }
 
     function getKey() {
-      if(isset($_GET['join'])) {
-        return $_GET['joinKey'];
+      if(isset($_POST['join'])) {
+        return $_POST['joinKey'];
       } else {
-        return $_GET['createKey'];
+        return $_POST['createKey'];
       }
     }
   }

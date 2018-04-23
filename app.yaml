@@ -1,0 +1,20 @@
+runtime: php55
+api_version: 1
+
+handlers:
+
+# Serve php scripts.
+- url: /
+  script: index.php
+
+- url: /index.php
+  script: index.php
+
+- url: /event.php
+  script: event.php
+
+- url: /create.php
+  script: create.php
+
+- url: /verify.php
+  script: verify.php

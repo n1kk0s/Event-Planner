@@ -2,13 +2,13 @@
 
   include('connect.php');
 
-  if(isset($_GET['create'])) {
-    $key = $_GET['eventKey'];
-    $name = $_GET['name'];
-    $host = $_GET['host'];
-    $date = $_GET['date'];
-    $location = $_GET['location'];
-    $description = $_GET['description'];
+  if(isset($_POST['create'])) {
+    $key = $_POST['eventKey'];
+    $name = $_POST['name'];
+    $host = $_POST['host'];
+    $date = $_POST['date'];
+    $location = $_POST['location'];
+    $description = $_POST['description'];
 
     $addkey = mysqli_real_escape_string($conn, $key);
     $addname = mysqli_real_escape_string($conn, $name);
@@ -30,8 +30,8 @@
       echo "<body>";
         echo "<h1 class='title'>Congrats!</h1>";
         echo "<h2 class='subtitle'>We were able to create your event!<br><br>Want to check it out?</h2>";
-        echo "<form action='event.php'><input class='button' type='submit' name='join' value='View Event'></form>";
-        echo "<form action='index.php'><input class='button' type='submit' value='Home'></form>";
+        echo "<form action='event.php' method='post'><input id='hidden' type='text' name='joinKey' value='{$key}'><input class='button' type='submit' name='join' value='View Event'></form>";
+        echo "<form action='index.php' method='post'><input class='button' type='submit' value='Home'></form>";
       echo "</body>";
       echo "</html>";
     } else {

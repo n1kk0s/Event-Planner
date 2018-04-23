@@ -38,6 +38,23 @@ body {
   font-size: 2rem;
 }
 
+/* The info other than event name and host */
+.info {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+/* The <p> tag on event pages */
+.description {
+margin: 1.5rem auto 1.5rem auto;
+font-size: 1rem;
+text-align: center;
+padding: 15px;
+width: 30rem;
+background: #2f4fff;
+border-radius: 5px;
+}
+
 /* Div styling */
 .join {
   margin: 0;
@@ -62,8 +79,11 @@ body {
 /* Form element styling */
 .createForm {
   width: 35rem;
-  margin: 0 auto;
-  border: solid 1px black;
+  margin: 0 auto 1rem auto;
+}
+
+#hidden {
+  display: none;
 }
 
 .field {
@@ -74,6 +94,10 @@ body {
   border: none;
   border-radius: 5px;
   box-sizing: border-box;
+}
+
+textarea {
+  margin: 0 auto 1rem auto;
 }
 
 #indexLabel {
@@ -101,12 +125,4 @@ label {
  background-color: #f3f3f3;
  border: none;
  border-radius: 30px;
-}
-
-table {
-  margin: 0 auto;
-  padding: 5px;
-}
-table .field, textarea {
-  width: 100%;
 }
