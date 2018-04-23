@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>App Name</title>
+  <title>Partier</title>
   <link rel='stylesheet' type='text/css' href="styles.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
 
   <div class='content'>
 
-    <h1 class='title'>App Name</h1>
+    <h1 class='title'>Partier</h1>
     <form class='join' action='event.php' method='get'>
         <h2 class='subtitle'>Join an Event</h2>
         <label id='indexLabel' for='joinKey'>Enter the event key</label><br>

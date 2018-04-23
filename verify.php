@@ -30,6 +30,8 @@
       echo "<body>";
         echo "<h1 class='title'>Congrats!</h1>";
         echo "<h2 class='subtitle'>We were able to create your event!<br><br>Want to check it out?</h2>";
+        echo "<form action='event.php'><input class='button' type='submit' name='join' value='View Event'></form>";
+        echo "<form action='index.php'><input class='button' type='submit' value='Home'></form>";
       echo "</body>";
       echo "</html>";
     } else {

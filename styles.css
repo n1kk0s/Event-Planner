@@ -2,13 +2,17 @@
     font-family: Pacifico;
     src: url(pacifico.ttf);
 }
+@font-face {
+    font-family: PoiretOne;
+    src: url(PoiretOne.ttf);
+}
 
 /* General styling and spacing */
 body {
   margin: 0;
   padding: 0;
   line-height: 1.3rem;
-  font-family: 'Pacifico', sans-serif;
+  font-family: 'PoiretOne', sans-serif;
   background: #2f4fff url("/images/back.png") no-repeat fixed center;
   color: #f3f3f3;
 }
@@ -21,6 +25,7 @@ body {
 /* Styling for text */
 .title {
   text-align: center;
+  font-family: 'Pacifico';
   font-weight: bold;
   font-size: 3rem;
   padding-top: 3rem;
@@ -71,17 +76,22 @@ body {
   box-sizing: border-box;
 }
 
+#indexLabel {
+  display: block;
+  text-align: center;
+}
 label {
   display: block;
   width: 100%;
-  margin: 0 auto;
-  text-align: left;
+  margin: 1rem auto 0 auto;
+  text-align: center;
   vertical-align: top;
   box-sizing: border-box;
 }
 
 .button {
  display: block;
+ font-size: 1rem;
  text-decoration: none;
  text-align: center;
  margin: 0 auto;

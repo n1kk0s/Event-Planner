@@ -47,9 +47,9 @@
                 echo "<input class='field' type='text' name='location' placeholder='123 Street Rd, City, State' required>";
               echo "<label for='description'>Description:</label>";
                 echo "<textarea class='field' rows='6' cols='50' name='description' placeholder='Enter a description for your event.'></textarea>";
-            echo "<a class='button' href='index.php'>Cancel</a>";
             echo "<input class='button' type='submit' name='create' value='Create'>";
           echo "</form>";
+          echo "<form action='index.php'><input class='button' type='submit' name='cancel' value='Cancel'></form>";
           echo "</div>";
 
       echo "</body>";
