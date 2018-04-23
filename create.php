@@ -15,6 +15,7 @@
       echo "<head>";
         echo "<title>Uh Oh...</title>";
         echo "<link rel='stylesheet' type='text/css' href='styles.css'>";
+        echo "<link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico'/>";
       echo "</head>";
       echo "<body>";
         echo "<h1 class='title'>Unavailable!</h1>";
@@ -30,6 +31,7 @@
       echo "<head>";
         echo "<title>Create Event</title>";
         echo "<link rel='stylesheet' type='text/css' href='styles.css'>";
+        echo "<link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico'/>";
       echo "</head>";
       echo "<body>";
         echo "<h1 class='title'>Create Your Event</h1>";

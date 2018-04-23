@@ -26,6 +26,7 @@
       echo "<head>";
         echo "<title>$name</title>";
         echo "<link rel='stylesheet' type='text/css' href='styles.css'>";
+        echo "<link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico'/>";
       echo "</head>";
       echo "<body>";
         echo "<h1 class='title'>$name</h1>";
@@ -44,6 +45,7 @@
       echo "<head>";
         echo "<title>Uh Oh...</title>";
         echo "<link rel='stylesheet' type='text/css' href='styles.css'>";
+        echo "<link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico'/>";
       echo "</head>";
       echo "<body>";
         echo "<h1 class='title'>You've been duped...</h1>";

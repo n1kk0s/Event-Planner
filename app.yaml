@@ -3,7 +3,7 @@ api_version: 1
 
 handlers:
 
-# Serve php scripts.
+# Serve php scripts
 - url: /
   script: index.php
 
@@ -18,3 +18,24 @@ handlers:
 
 - url: /verify.php
   script: verify.php
+
+# Serve files
+- url: /styles.css
+  static_files: styles.css
+  upload: styles.css
+
+- url: /images/back.png
+  static_files: images/back.png
+  upload: images/back.png
+
+- url: /images/favicon.ico
+  static_files: images/favicon.ico
+  upload: images/favicon.ico
+
+- url: /pacifico.ttf
+  static_files: pacifico.ttf
+  upload: pacifico.ttf
+
+- url: /PoiretOne.ttf
+  static_files: PoiretOne.ttf
+  upload: PoiretOne.ttf

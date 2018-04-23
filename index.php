@@ -3,6 +3,7 @@
 <head>
   <title>Partier</title>
   <link rel='stylesheet' type='text/css' href="styles.css">
+  <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico'/>
 </head>
 <body>
 
