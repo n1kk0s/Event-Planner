@@ -1,0 +1,76 @@
+<DOCTYPE! html>
+<html>
+<head>
+  <title>IST 411 Project</title>
+  <link rel='stylesheet' type='text/css' href='styles.css'>
+</head>
+<body>
+  <h1>411 Project Plan</h1>
+  <a href="https://github.com/n1kk0s/Event-Planner"><h2>GitHub repo</h2></a>
+  <a href='partier-202001.appspot.com'><h2>Partier hosted on GCS</h2></a>
+  <p>
+    <h3>Description</h3>
+    For my project, I want to make an event planning application.
+    My goal is to make an app that lets people organize events, invite people, and define other parts of a party.
+    I would like to use keys to access events which you would get from others, item lists for BYOB events, Google Maps
+    integration for quick access to the event location, and a chat feature that all invited guests could use.
+  </p>
+  <p>
+    <h3>Design</h3>
+    <h5>Technologies</h5>
+    For technologies, while I started this project in Spring, I switched and it's now primarliy PHP, SQL, and HTML.
+    I've also successfully deployed my app on Google Cloud Services using the App Engine and Cloud SQL.
+    I would like to integrate the API for Google Maps to show locations for events you've been invited to,
+    or possibly even show the locations of multiple parties you've been invited to in one place.<br>
+    <h5>Use Cases</h5>
+    For my use cases, core functionality would include:
+    <ul>
+      <li>Generating an event from a form</li>
+      <li>Accessing a page for details about a specific party</li>
+    </ul>
+    After those core tasks are completed, more beneficial functionality would be added based on priority.
+    Throughout the timeline of the project, I want to include:
+    <ul>
+      <li>An item list for people to bring items</li>
+      <li>Google Maps integration for quick access to directions</li>
+    </ul>
+    This list contains functionality that I want to implement if time allows. Obviously, the largest portion of this will be
+    making sure the MySQL integrates well and the schema for the database makes sense given the context of the application.
+    <h5>Other Design Docs</h5>
+    I've created some design documentation and added a readme with this information as well. I'll put the links down below.</br>
+    One of the documents is a click-through UI mockup that I created in Adobe XD CC. It's not fully created yet, but it conveys what I'm aiming for.<br>
+    The other link is a GitHub link to the docs folder that will be the home for diagrams, mockups, and any other files that are relevant to the project.<br><br>
+    <a href='https://xd.adobe.com/view/e569cac0-ddbd-410f-ab71-d9ffbdd524de'>Click-through UI mockup</a><br>
+    <a href='https://drive.google.com/drive/folders/1orfli_xC7nIFLc1_hYyQn5qjqO9MZntT?usp=sharing'>GitHub docs folder</a>
+  </p>
+  <p>
+    <h3>Schedule</h3>
+    This is a rough outline I've generated to give an idea of when I'll be doing each piece of my
+    project. After switching, I was able to make the progress needed to complete the project.
+    <h5>Checkpoint 1</h5>
+    Before this checkpoint was graded, I wasn't able to get any coding done. Instead, I focused on creating design documentation to help facilitate the process of creating the app. I designed the database schema and created a high-fidelity click-through to get a feel for how the app should navigate and look.
+    <h5>Checkpoint 2</h5>
+    At this checkpoint, I want to create appropriate views for all of my use cases and style them according to my click-through and get them looking good. I also want to get everything mapped to specific URLs to see the views properly. I'll also be creating the classes that I will use to store objects such as events.
+    <h5>Checkpoint 3</h5>
+    Before the switch to PHP, I wanted to have account creation set up and working. After starting in PHP, I was able to easily get everything up and running. I removed the login idea in favor of using event keys to create and access events. I was able to easily complete this goal in PHP.
+    <h5>Final</h5>
+    I wanted to have a uniqe use case implemented into this project by the end, and I still do, but I did change what I wanted. The lack of accounts makes one portion of the app a little underwhelming: Looking at events. More information needs to be on this screen, so I think adding either an item list or a list of attendees will really augment the purpose of the app, which is getting people the information about an event that they need.
+  </p>
+  <p>
+    <h3>Justification</h3>
+    <h5>Novelty</h5>
+    I'm not aiming to create something amazing with this application, but I do think this idea has
+    enough unique features to make it something that fits a niche market of people. There
+    are alternatives to individual features; you can chat on Messenger, text your address to people, or create a
+    Facebook event for your party, but I think tying these specific features together allows
+    for a much nicer way to get people together and organize an event.<br>
+    I see a few issues with what currently exists. They aren't cohesive, they're fragmented portions of an app
+    that don't fully support an event-centered use case. Facebook event pages are close, but it's still focused on
+    posts, which is not intuitive for an event. There are no lists for items on Facebook, you can't send the directions
+    to your phone through Google Maps, you can't easily chat about the event with the other guests outside of posts unless you use
+    Messenger, and you can't see all the events you've been invited to without digging through the rest of Facebook's endless side panel.
+    <h5>Complexity</h5>
+    The complexity of this app comes from not just the languages used (PHP, SQL), but primarily from configuring Google Cloud Services effectively. GCS needed configured in two ways. The App Engine needed to have my application uploaded to it to create instances, and the Cloud SQL needed to be created and configured to accept requests from the App Engine.
+  </p>
+</body>
+</html>
