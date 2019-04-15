@@ -4,9 +4,9 @@ api_version: 1
 env_variables:
     # Replace USER, PASSWORD, DATABASE, and CONNECTION_NAME with the
     # values obtained when configuring your Cloud SQL instance.
-    MYSQL_USER: root
-    MYSQL_PASSWORD: 411
-    MYSQL_DSN: mysql:dbname=partier;unix_socket=/cloudsql/partier-202001:us-east4:event-planner
+    MYSQL_USER: user
+    MYSQL_PASSWORD:
+    MYSQL_DSN: mysql:dbname=partier-202001:us-east1:partier
 
 handlers:
 
