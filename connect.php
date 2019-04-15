@@ -1,11 +1,11 @@
 <?php
 
-$hn = '35.194.83.205';
+$hn = '35.231.116.124';
 $db = 'partier';
 $un = 'user';
 $pw = '';
 
-$conn = new mysqli($hn, $un, $pw, $db,null,'/cloudsql/partier-202001:us-east4:event-planner');
+$conn = new mysqli($hn, $un, $pw, $db,null,'partier-202001:us-east1:partier');
 
 //echo "connection successful";
 
