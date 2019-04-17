@@ -34,6 +34,7 @@
         echo "<link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico'/>";
       echo "</head>";
       echo "<body>";
+        echo "Key Valid";
         echo "<h1 class='title'>Create Your Event</h1>";
         echo "<div class='createForm'>";
           echo "<form class='createForm' action='verify.php' method='post'>";
