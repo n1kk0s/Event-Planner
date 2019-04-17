@@ -29,6 +29,7 @@
         echo "<link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico'/>";
       echo "</head>";
       echo "<body>";
+	echo "key valid";
         echo "<h1 class='title'>$name</h1>";
         echo "<h2 class='subtitle'>Hosted by: $host</h2>";
         echo "<h2 class='info'>$date</h2>";
@@ -49,7 +50,7 @@
       echo "</head>";
       echo "<body>";
         echo "<h1 class='title'>You've been duped...</h1>";
-        echo "<p class='bodyText'>Sorry friend, it looks like someone gave you the wrong code...</p>";
+        echo "<center><p class='bodyText'>Sorry friend, it looks like someone gave you the wrong code...</p></center>";
       echo "</body>";
       echo "</html>";
 
