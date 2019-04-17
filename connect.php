@@ -1,9 +1,9 @@
 <?php
 
-$hn = '35.231.116.124';
+$hn = 'localhost';
 $db = 'partier';
 $un = 'root';
-$pw = 'toor';
+$pw = '';
 
 $conn = new mysqli($hn, $un, $pw, $db,null,'partier-202001:us-east1:partier');
 
