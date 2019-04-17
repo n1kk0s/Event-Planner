@@ -2,8 +2,8 @@
 
 $hn = 'localhost';
 $db = 'partier';
-$un = 'root';
-$pw = '';
+$un = 'user';
+$pw = 'toor';
 
 $conn = new mysqli($hn, $un, $pw, $db, null);
 
